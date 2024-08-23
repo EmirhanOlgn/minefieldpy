@@ -41,7 +41,7 @@ for x in range(15):
     location = input(
         "Enter X-Y coordinate | Example: 13 ➡ X: 1, Y: 3 | Min: 1, Max: 6\nEnter: ")
     if (not len(location) == 2) or (int(location[0]) < 1 or int(location[0]) > 6 or int(location[1]) < 1 or int(location[1]) > 6) or (not map_row[int(location[1]) - 1][int(location[0]) - 1] == "⬜"):
-        print("⛔ | U need be rules!")
+        print("⛔ | You have to follow the rules!")
     else:
         if not (int(location[0]) == bomb_1_x and int(location[1]) == bomb_1_y) or (int(location[0]) == bomb_2_x and int(location[1]) == bomb_2_y) or (int(location[0]) == bomb_3_x and int(location[1]) == bomb_3_y) or (int(location[0]) == bomb_4_x and int(location[1]) == bomb_4_y) or (int(location[0]) == bomb_5_x and int(location[1]) == bomb_5_y):
             score_rand = random.randint(1, 3)
